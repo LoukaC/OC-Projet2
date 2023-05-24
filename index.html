@@ -27,10 +27,10 @@
   <body>
     <div class="main-container">
       <header>
+        <div class="logo">
+          <img src="./images/logo/Booki.png" alt="logo" />
+        </div>
         <nav>
-          <div>
-            <img src="./images/logo/Booki.png" alt="logo" />
-          </div>
           <ul>
             <li class="ancreH>">
               <a href="#ancre_hebergements" class="lien">Hébergements</a>
@@ -45,33 +45,23 @@
         <div class="trouver-hebergements">
           <!-- trouver hébergement + recherche + filtre -->
           <section class="titre">
-            <h2 class="section-title" id="ancre_hebergements">
+            <h2 class="section-title">
               Trouvez votre hébergement pour des vacances de rêve
             </h2>
             <p>En plein centre-ville ou en pleine nature</p>
           </section>
           <section class="recherche">
             <!-- fonction recherche -->
-            <form action="" method="post" class="form">
-              <div class="label">
-                <label for="ville">
-                  <div class="dot">
-                    <i
-                      class="fa-solid fa-location-dot fa-lg"
-                      aria-hidden="true"
-                      style="color: #000000"
-                    ></i>
-                  </div>
-                </label>
-              </div>
-              <input
-                type="search"
-                name="ville"
-                id="ville"
-                placeholder="Ville"
-                class="search"
-              />
-              <button type="submit" class="button">
+            <form action="" method="post">
+              <label for="ville">
+                <i
+                  class="fa-solid fa-location-dot fa-lg"
+                  aria-hidden="true"
+                  style="color: #000000"
+                ></i>
+              </label>
+              <input type="search" name="ville" id="ville" />
+              <button type="submit">
                 <div class="rechercher">Rechercher</div>
                 <div class="loupe">
                   <i
@@ -89,7 +79,7 @@
             <div class="eco-fam">
               <div class="eco">
                 <i
-                  class="fa-solid fa-money-bill-wave"
+                  class="fa-solid fa-money-bill-wave fa-lg"
                   style="color: #0065fc"
                   aria-hidden="true"
                 ></i>
@@ -137,7 +127,7 @@
         <div class="hebergements-and-populaires">
           <section class="hebergements">
             <div class="hebergements-title">
-              <h2 class="section-title">Hébergements à Marseille</h2>
+              <h2 class="section-title" id="ancre_hebergements">Hébergements à Marseille</h2>
             </div>
             <div class="hebergements-cards">
               <div class="hebergements-cards-lign">
@@ -474,7 +464,7 @@
         <div class="activites-main">
           <section class="activites">
             <div class="activites-title">
-              <h2 class="section-title">Activités à Marseille</h2>
+              <h2 class="section-title" id="ancre_activites">Activités à Marseille</h2>
             </div>
             <div class="activites-cards">
               <article class="card">
@@ -484,9 +474,40 @@
                     alt="Image du port avec bateaux"
                   />
                   <div class="card-content">
-                    <div class="card-txt">
                       <h3 class="card-title">Vieux-Port</h3>
-                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="card">
+                <a href="#" class="card-lien">
+                  <img
+                    src="./images/activites/paul-hermann.jpg"
+                    alt="Image du Fort de pomègues"
+                  />
+                  <div class="card-content">
+                      <h3 class="card-title">Fort de Pomègues</h3>
+                  </div>
+                </a>
+              </article>
+              <article class="card">
+                <a href="#" class="card-lien">
+                  <img
+                    src="./images/activites/kilyan-sockalingum.jpg"
+                    alt="Image du parc national des Calanques"
+                  />
+                  <div class="card-content">
+                      <h3 class="card-title">Parc national des Calanques</h3>
+                  </div>
+                </a>
+              </article>
+              <article class="card">
+                <a href="#" class="card-lien">
+                  <img
+                    src="./images/activites/florian-wehde.jpg"
+                    alt="Image de Notre-Dame-de-la-Garde"
+                  />
+                  <div class="card-content">
+                      <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                   </div>
                 </a>
               </article>
@@ -494,7 +515,36 @@
           </section>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <div class="colonne">
+          <div class="colonne-title">
+            <h3>A propos</h3>
+          </div>
+          <ul class="colonne-text">
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales</li>
+            <li>Données et confidentialité</li>
+          </ul>
+        </div>
+        <div class="colonne">
+          <div class="colonne-title">
+            <h3>Nos Hébergements</h3>
+          </div>
+          <ul class="colonne-text">
+            <li>Charte qualité</li>
+            <li>Proposer votre hôtel</li>
+          </ul>
+        </div>
+        <div class="colonne">
+          <div class="colonne-title">
+            <h3>Assistance</h3>
+          </div>
+          <ul class="colonne-text">
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
