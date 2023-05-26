@@ -195,7 +195,6 @@ header nav ul {
 form {
   display: inline-flex;
   flex-direction: row;
-  border: 1px solid #179123;
 }
 
 label {
@@ -217,8 +216,8 @@ form input {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-  border-top: 1px solid #ed1919;
-  border-bottom: 1px solid #e11c1c;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
   border-left: none;
   border-right: none;
 }
@@ -262,6 +261,13 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.filtres-texte {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 15px;
 }
 
 .eco-fam,
@@ -476,6 +482,15 @@ footer li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  /* barre de filtres */
+  .filtres {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    height: 91px;
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -506,10 +521,14 @@ footer li {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .activites-cards img {
+    height: 193.5px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) and (min-width: 320px) {
   body {
     margin: 0px;
   }
@@ -571,12 +590,21 @@ footer li {
   }
 
   .recherche {
-    width: auto;
+    width: 335px;
+  }
+
+  form {
+    width: 335px;
+  }
+  form input {
+    width: 249px;
   }
 
   button {
     width: 49px;
     border-radius: 15px;
+    padding: 0px 0px 0px 0px;
+    margin-left: -13px;
   }
 
   .rechercher {
@@ -594,13 +622,18 @@ footer li {
     align-items: flex-start;
     gap: 20px;
     height: 161px;
-    width: auto;
+    width: 335px;
+  }
+
+  .filtres-texte {
+    flex-direction: column;
+    gap: 20px;
   }
 
   .eco-fam,
   .rom-pep {
     gap: 10px;
-    width: auto;
+    width: 335px;
   }
 
   .eco,
@@ -627,6 +660,7 @@ footer li {
 
   .pep {
     padding-left: 19.5px;
+    padding-right: 29px;
     gap: 11.5px;
   }
 
