@@ -116,14 +116,18 @@ body {
   margin-bottom: 5px;
 }
 
-/* Main */
+/****** Main  body ***********/
 main {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
 
-/* Header */
+body {
+    margin: 0px;
+}
+
+/****** Header ***********/
 header {
   display: flex;
   flex-direction: row;
@@ -146,7 +150,7 @@ header {
   width: 61.09px;
 }
 
-/* positionnement dimensions balise ul */
+/* nav */
 header nav {
   width: 328.6px;
   height: 35px;
@@ -173,7 +177,7 @@ header nav ul {
   border-top: solid 2px #0065fc;
 }
 
-/* section "trouver hébergements" */
+/****** touver-herbergements ***********/
 .trouver-hebergements {
   display: flex;
   flex-direction: column;
@@ -238,6 +242,8 @@ button {
   border: none;
 }
 
+/* affichage rechercher ou loupe */
+
 .rechercher {
   display: block;
 }
@@ -263,6 +269,7 @@ button {
   align-items: center;
 }
 
+/* les 4 filtres */
 .filtres-texte {
   display: flex;
   flex-direction: row;
@@ -333,7 +340,7 @@ h3 {
   border-radius: 12px;
 }
 
-/* Hebergements */
+/****** touver-herbergements ***********/
 .hebergements-title {
   display: flex;
   justify-content: flex-start;
@@ -400,7 +407,7 @@ h3 {
   margin-top: 30px;
 }
 
-/* Activites */
+/****** Activités ***********/
 .activites {
   width: 100%;
 }
@@ -491,6 +498,12 @@ footer li {
     height: 91px;
   }
 
+  .filtres h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -537,7 +550,7 @@ footer li {
     padding: 0px;
   }
 
-  /* header */
+  /****** Header ***********/
   header {
     display: flex;
     flex-direction: column;
@@ -576,13 +589,13 @@ footer li {
     border-bottom: solid 2px #0065fc;
   }
 
-  /* main */
+  /****** main ***********/
   main {
     margin-top: 35px;
     margin-bottom: 35px;
   }
 
-  /* trouver un hébergement*/
+  /****** trouver-hebergements ***********/
 
   .trouver-hebergements {
     padding: 0px 20px 0px 20px;
