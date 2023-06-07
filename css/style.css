@@ -188,6 +188,14 @@ header nav ul {
 .titre p {
   margin: 8px 0px 0px 0px;
   font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 /* barre de recherche */
@@ -589,7 +597,6 @@ footer li {
   }
 
   header li:hover {
-    color: #0065fc;
     padding-bottom: 15px;
     border-bottom: solid 2px #0065fc;
   }
