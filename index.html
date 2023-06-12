@@ -26,7 +26,7 @@
 
   <body>
     <div class="main-container">
-<!-- header -->
+      <!-- header -->
       <header>
         <!-- logo -->
         <div class="logo">
@@ -36,7 +36,8 @@
         <nav>
           <ul>
             <li class="ancreH>">
-              <a href="#ancre_hebergements" class="lien">Hébergements</a>  <!-- ancre pour enmener aux sections hébergements et activités -->
+              <a href="#ancre_hebergements" class="lien">Hébergements</a>
+              <!-- ancre pour enmener aux sections hébergements et activités -->
             </li>
             <li class="ancreA">
               <a href="#ancre_activites" class="lien">Activités</a>
@@ -46,7 +47,7 @@
       </header>
       <main>
         <div class="trouver-hebergements">
-<!-- trouver hébergement + recherche + filtre -->
+          <!-- trouver hébergement + recherche + filtre -->
           <!-- titre-->
           <section class="titre">
             <h1 class="section-title">
@@ -57,18 +58,27 @@
           <section class="recherche">
             <!-- fonction formulaire de recherche -->
             <form action="" method="get">
-              <label for="ville"> <!-- étiquette -->
+              <label for="ville">
+                <!-- étiquette -->
+                <span class="loca">
                 <i
                   class="fa-solid fa-location-dot fa-lg"
-                  aria-hidden="true"
-                  style="color: #000000"
-                ></i>
+                  aria-hidden="true"></i>
+                </span>
               </label>
-              <input type="search" name="ville" id="ville" placeholder="Marseille, France" /> <!-- champ de recherche -->
-              <button type="submit"> <!-- bouton recherche avec "rechercher" et la loupe -->
+              <input
+                type="search"
+                name="ville"
+                id="ville"
+                placeholder="Marseille, France"
+              />
+              <!-- champ de recherche -->
+              <button type="submit">
+                <!-- bouton recherche avec "rechercher" et la loupe -->
                 <span class="rechercher">Rechercher</span>
                 <span class="loupe">
-                  <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+                  <i
+                    class="fa-solid fa-magnifying-glass"></i>
                 </span>
               </button>
             </form>
@@ -78,24 +88,32 @@
             <div class="filtre-title">
               <h3>Filtres</h3>
             </div>
-            <div class="filtres-contenu"> <!--  filtres-contenu composés de 2 contenants filtres-box eu memes composés de 2 filtres-->
+            <div class="filtres-contenu">
+              <!--  filtres-contenu composés de 2 contenants filtres-box eu memes composés de 2 filtres-->
               <div class="filtres-box">
-                <div class="eco"> <!--  filtre économique -->
-                  <i class="fa-solid fa-money-bill-wave fa-lg" style="color: #0065fc" aria-hidden="true"></i>
+                <div class="eco">
+                  <!--  filtre économique -->
+                  <i
+                    class="fa-solid fa-money-bill-wave fa-lg"
+                    aria-hidden="true"
+                  ></i>
                   <h4>Economique</h4>
                 </div>
-                <div class="fam"> <!--  filtre famille -->
-                  <i class="fa-solid fa-person fa-lg" style="color: #0065fc" aria-hidden="true"></i>
+                <div class="fam">
+                  <!--  filtre famille -->
+                  <i class="fa-solid fa-person fa-lg" aria-hidden="true"></i>
                   <h4>Familial</h4>
                 </div>
               </div>
               <div class="filtres-box">
-                <div class="rom"> <!--  filtre romantique -->
-                  <i class="fa-solid fa-heart fa-lg" style="color: #0065fc" aria-hidden="true"></i>
+                <div class="rom">
+                  <!--  filtre romantique -->
+                  <i class="fa-solid fa-heart fa-lg" aria-hidden="true"></i>
                   <h4>Romantique</h4>
                 </div>
-                <div class="pep"> <!--  filtre nos pépites -->
-                  <i class="fa-solid fa-fire fa-lg" style="color: #0065fc" aria-hidden="true"></i>
+                <div class="pep">
+                  <!--  filtre nos pépites -->
+                  <i class="fa-solid fa-fire fa-lg" aria-hidden="true"></i>
                   <h4>Nos pépites</h4>
                 </div>
               </div>
@@ -104,33 +122,44 @@
           <!--  information -->
           <section class="info-bar">
             <div class="i">
-              <i class="fa-solid fa-info fa-sm" style="color: #0065fc" aria-hidden="true"></i>
+              <i class="fa-solid fa-info fa-sm" aria-hidden="true"></i>
             </div>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </section>
         </div>
-<!-- hébergements et populaires -->
+        <!-- hébergements et populaires -->
         <div class="hebergements-and-populaires">
-          <section class="hebergements"><!-- hébergements -->
+          <section class="hebergements">
+            <!-- hébergements -->
             <div class="hebergements-title">
-              <h2 class="section-title" id="ancre_hebergements">Hébergements à Marseille</h2>
+              <h2 class="section-title" id="ancre_hebergements">
+                Hébergements à Marseille
+              </h2>
             </div>
-            <div class="hebergements-cards"> <!-- carte hébergements composé de 2 contenants en ligne de 3 cartes-->
-              <div class="hebergements-cards-lign"> <!-- 1ere lignes de 3 cartes -->
+            <div class="hebergements-cards">
+              <!-- carte hébergements composé de 2 contenants en ligne de 3 cartes-->
+              <div class="hebergements-cards-lign">
+                <!-- 1ere lignes de 3 cartes -->
                 <article class="card">
-                  <a href="#" class="card-lien"> <!-- lien pour que l'image soir cliquable -->
+                  <a href="#" class="card-lien">
+                    <!-- lien pour que l'image soir cliquable -->
                     <img
                       src="./images/hebergements/fred-kleber.jpg"
                       alt="Image de la chambre d'hôtel montrant deux lits"
                     />
-                    <div class="card-content"> <!-- contenant des informations de la carte -->
-                      <div class="card-txt"> <!-- contenant texte -->
-                        <h3 class="card-title">Hôtel du port</h3> <!-- titre -->
-                        <p class="card-subtitle"> <!-- sous titre -->
+                    <div class="card-content">
+                      <!-- contenant des informations de la carte -->
+                      <div class="card-txt">
+                        <!-- contenant texte -->
+                        <h3 class="card-title">Hôtel du port</h3>
+                        <!-- titre -->
+                        <p class="card-subtitle">
+                          <!-- sous titre -->
                           Nuit à partir de 52<span class="euro">€</span>
                         </p>
                       </div>
-                      <div class="card-rating"> <!-- etoiles notes -->
+                      <div class="card-rating">
+                        <!-- etoiles notes -->
                         <i
                           class="fa-xs fa-solid fa-star"
                           aria-hidden="true"
@@ -235,7 +264,8 @@
                   </a>
                 </article>
               </div>
-              <div class="hebergements-cards-lign">  <!-- 2eme lignes de 3 cartes -->
+              <div class="hebergements-cards-lign">
+                <!-- 2eme lignes de 3 cartes -->
                 <article class="card">
                   <a href="#" class="card-lien">
                     <img
@@ -355,13 +385,15 @@
                 </article>
               </div>
             </div>
-            <div class="hebergements-afficher"> <!-- Afficher plus -->
+            <div class="hebergements-afficher">
+              <!-- Afficher plus -->
               <a href="#" class="afficher">
                 <h3>Afficher plus</h3>
               </a>
             </div>
           </section>
-          <section class="populaires"> <!-- populaires -->
+          <section class="populaires">
+            <!-- populaires -->
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -447,11 +479,13 @@
             </div>
           </section>
         </div>
-<!-- Activités -->
+        <!-- Activités -->
         <div class="activites-main">
           <section class="activites">
             <div class="activites-title">
-              <h2 class="section-title" id="ancre_activites">Activités à Marseille</h2>
+              <h2 class="section-title" id="ancre_activites">
+                Activités à Marseille
+              </h2>
             </div>
             <div class="activites-cards">
               <article class="card">
@@ -461,7 +495,7 @@
                     alt="Image du port avec bateaux"
                   />
                   <div class="card-content">
-                      <h3 class="card-title">Vieux-Port</h3>
+                    <h3 class="card-title">Vieux-Port</h3>
                   </div>
                 </a>
               </article>
@@ -472,7 +506,7 @@
                     alt="Image du Fort de pomègues"
                   />
                   <div class="card-content">
-                      <h3 class="card-title">Fort de Pomègues</h3>
+                    <h3 class="card-title">Fort de Pomègues</h3>
                   </div>
                 </a>
               </article>
@@ -483,7 +517,7 @@
                     alt="Image du parc national des Calanques"
                   />
                   <div class="card-content">
-                      <h3 class="card-title">Parc national des Calanques</h3>
+                    <h3 class="card-title">Parc national des Calanques</h3>
                   </div>
                 </a>
               </article>
@@ -494,7 +528,7 @@
                     alt="Image de Notre-Dame-de-la-Garde"
                   />
                   <div class="card-content">
-                      <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                   </div>
                 </a>
               </article>
@@ -502,9 +536,10 @@
           </section>
         </div>
       </main>
-<!-- Footer -->
+      <!-- Footer -->
       <footer>
-        <div class="colonne"> <!-- 3 contenants colonnes composées d'un conteant pour le titre et d'une liste -->
+        <div class="colonne">
+          <!-- 3 contenants colonnes composées d'un conteant pour le titre et d'une liste -->
           <div class="colonne-title">
             <h3>A propos</h3>
           </div>
